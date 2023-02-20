@@ -1,0 +1,121 @@
+{% extends 'main_page/base.html' %}
+{% load static %}
+
+ {% block content %}
+<style>
+ body{
+  background-color: #282e32;
+}
+
+h1{
+  color: #fff;
+  font-family: sans-serif;
+  text-align: center;
+  font-weight: normal;
+}
+
+@keyframes carouselAnim{
+  0%{
+    transform: translateX(100%) rotatey(0) scale(1.2, 1.2);
+    transform-origin: center center;
+    z-index: 10;
+  }
+  27%{
+    transform: translateX(100%) rotatey(0) scale(1.2, 1.2);
+    transform-origin: center center;
+    z-index: 10;
+  }
+  33.33333%{
+    transform: translateX(0) translateY(0) rotatey(10deg) scale(0.8,1);
+    transform-origin: left center;
+    z-index: 5;
+  }
+  60%{
+    transform: translateX(0) translateY(0) rotatey(10deg) scale(0.8,1);
+    transform-origin: left center;
+    z-index: 5;
+  }
+  66.666666%{
+    transform: translateX(200%) translateY(0) rotatey(-10deg) scale(0.8,1);
+    transform-origin: right center;
+    z-index: 5;
+  }
+  93%{
+    transform: translateX(200%) translateY(0) rotatey(-10deg) scale(0.8,1);
+    transform-origin: right center;
+    z-index: 5;
+  }
+  100%{
+    transform: translateX(100%) rotatey(0) scale(1.2, 1.2);
+    transform-origin: center center;
+    z-index: 10;
+  }
+}
+
+.carousel__container{
+  width: 100%;
+  max-width: 960px;
+  perspective: 300px;
+  perspective-origin: 50% 60%;
+  min-height: 14em;
+  margin: 3em auto;
+}
+
+.carousel__item{
+  position: absolute;
+  width: 33%;
+  padding-bottom: 19%;
+  animation-name: carouselAnim;
+  /* transform: translateX(0) rotatey(50deg); */
+  transform-origin: left center;
+  animation-duration: 18s;
+  animation-iteration-count: infinite;
+}
+
+.carousel__item:first-child{
+  animation-delay: -6s;
+}
+.carousel__item:last-child{
+  animation-delay: -12s;
+}
+
+.carousel__image{
+  position: absolute;
+  width: 100%;
+  border-radius: 1rem;
+}
+</style>
+
+<h1>Student Hub</h1>
+
+<div class="carousel__container">
+  <div class="carousel__item">
+    <img src="{% static 'images/student hub0.png' %}" class="carousel__image">
+  </div>
+  <div class="carousel__item">
+    <img src="{% static 'images/تعليميه.png' %}" class="carousel__image">
+  </div>
+  <div class="carousel__item">
+    <img src="{% static 'images/منصه.png' %}" class="carousel__image">
+  </div>
+</div>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ {% endblock %}
+
+

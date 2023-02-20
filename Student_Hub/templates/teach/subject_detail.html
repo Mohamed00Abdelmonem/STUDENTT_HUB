@@ -1,0 +1,53 @@
+{% extends 'student/base_nav.html' %}
+{% load static %}
+
+ {% block content %}
+
+
+
+<style>
+body {
+background: #D7DEED;
+}
+</style>
+
+<div class="container ">
+
+<br>
+<br>
+
+<center>
+<h1 align="center">الفصول المتاحه </h1>
+<br>
+<br>
+<br>
+<br>
+
+<div class="" >
+  <div class="col-sm-6">
+
+      {% for  lesson in subject_lesson %}
+
+    <div class="card" style="background-color: #"  >
+      <div class="card-body">
+        <h5 class="card-title">{{lesson.name}}</h5>
+        <p class="card-text">{{lesson.description}}</p>
+        <a href="{% url 'teacher:lesson_detail' lesson.id %}" class="btn btn-primary" style="background-color: #152d42">دخول</a>
+      </div>
+    </div>
+
+
+   <br>
+    <br>
+    <br>
+
+{% endfor %}
+
+
+    </div>
+</div>
+
+
+</center>
+
+ {% endblock %}

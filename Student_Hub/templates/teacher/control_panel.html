@@ -1,0 +1,250 @@
+{% extends 'main_page/base.html' %}
+{% load static %}
+
+ {% block content %}
+
+<style>
+body {
+background: #D7DEED;
+}
+</style>
+
+
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">لوحه التحكم الكامله  </h5>
+        <p class="card-text">لوحه التحكم تساعدك علي التحكم بالمنصه ك معلم و صلاحيات المعلم كلها متاحه</p>
+        <a href="{% url 'admin:index' %}" class="btn btn-primary">دخول</a>
+<!--        <a href="{% url 'admin:index' %}" class="btn btn-primary">Admin</a>-->
+      </div>
+    </div>
+  </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title"> انشئ اختبار </h5>
+        <p class="card-text">بامكانك من خلال هذا القسم انشاء اختبار من جوجل و انشاء اختبار خاص بالمنصه</p>
+        <a href="{% url 'exames' %}" class="btn btn-primary">دخول</a>
+      </div>
+    </div>
+  </div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+     <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title"> بث مباشر  </h5>
+        <p class="card-text">يسمح لك هذا لاقسم بالدخول مباشر لانشاء رابط من برنامج زوم
+        للمشاركه مع الطلاب </p>
+        <a href="#" class="btn btn-primary">دخول</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+<!--<style>-->
+
+
+
+<!--&lt;!&ndash;body{&ndash;&gt;-->
+<!--&lt;!&ndash;    margin: 0;&ndash;&gt;-->
+<!--&lt;!&ndash;    padding: 0;&ndash;&gt;-->
+<!--&lt;!&ndash;    display: flex;&ndash;&gt;-->
+<!--&lt;!&ndash;    justify-content:center;&ndash;&gt;-->
+<!--&lt;!&ndash;    align-items: center;&ndash;&gt;-->
+<!--&lt;!&ndash;    min-height: 100vh;&ndash;&gt;-->
+<!--&lt;!&ndash;    background: #212121;&ndash;&gt;-->
+<!--&lt;!&ndash;    font-family: sans-serif;&ndash;&gt;-->
+<!--&lt;!&ndash;  }&ndash;&gt;-->
+
+
+<!--body {-->
+<!--background: #848688;-->
+<!--}-->
+
+<!--.switcher-login .underline::before {-->
+<!--	transform: translateX(101%);-->
+<!--}-->
+
+
+<!--  .box{-->
+<!--    width: 1200px;-->
+<!--    display: grid;-->
+<!--    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));-->
+<!--    grid-gap: 15px;-->
+<!--    margin: 0 auto;-->
+<!--  }-->
+<!--  .card{-->
+<!--    position: relative;-->
+<!--    width: 300px;-->
+<!--    height: 350px;-->
+<!--    background: #fff;-->
+<!--    margin: 0 auto;-->
+<!--    border-radius: 4px;-->
+<!--    box-shadow:0 2px 10px rgba(0,0,0,.2);-->
+<!--  }-->
+<!--  .card:before,-->
+<!--  .card:after-->
+<!--  {-->
+<!--    content:"";-->
+<!--    position: absolute;-->
+<!--    top: 0;-->
+<!--    left: 0;-->
+<!--    width: 100%;-->
+<!--    height: 100%;-->
+<!--    border-radius: 4px;-->
+<!--    background: #fff;-->
+<!--    transition: 0.5s;-->
+<!--    z-index:-1;-->
+<!--  }-->
+<!--  .card:hover:before{-->
+<!--  transform: rotate(20deg);-->
+<!--  box-shadow: 0 2px 20px rgba(0,0,0,.2);-->
+<!--  }-->
+<!--  .card:hover:after{-->
+<!--  transform: rotate(10deg);-->
+<!--  box-shadow: 0 2px 20px rgba(0,0,0,.2);-->
+<!--  }-->
+<!--  .card .imgBx{-->
+<!--  position: absolute;-->
+<!--  top: 10px;-->
+<!--  left: 10px;-->
+<!--  bottom: 10px;-->
+<!--  right: 10px;-->
+<!--  background: #222;-->
+<!--  transition: 0.5s;-->
+<!--  z-index: 1;-->
+<!--  }-->
+
+<!--  .card:hover .imgBx-->
+<!--  {-->
+<!--    bottom: 80px;-->
+<!--  }-->
+
+<!--  .card .imgBx img{-->
+<!--      position: absolute;-->
+<!--      top: 0;-->
+<!--      left: 0;-->
+<!--      width: 100%;-->
+<!--      height: 100%;-->
+<!--      object-fit: cover;-->
+<!--  }-->
+
+<!--  .card .details{-->
+<!--      position: absolute;-->
+<!--      left: 10px;-->
+<!--      right: 10px;-->
+<!--      bottom: 10px;-->
+<!--      height: 60px;-->
+<!--      text-align: center;-->
+<!--  }-->
+
+<!--  .card .details h2{-->
+<!--   margin: 0;-->
+<!--   padding: 0;-->
+<!--   font-weight: 600;-->
+<!--   font-size: 20px;-->
+<!--   color: #777;-->
+<!--   text-transform: uppercase;-->
+<!--  }-->
+
+<!--  .card .details h2 span{-->
+<!--  font-weight: 500;-->
+<!--  font-size: 16px;-->
+<!--  color: #f38695;-->
+<!--  display: block;-->
+<!--  margin-top: 5px;-->
+<!--   }-->
+
+
+
+<!--</style>-->
+
+
+<!--  <div class="box">-->
+<!--      <div class="card">-->
+<!--        <div class="imgBx">-->
+<!--            <img src="{% static 'images/logo student hub.png' %}" alt="images">-->
+<!--        </div>-->
+<!--        <div class="details">-->
+<!--            <h2>لوحه التحكم الكامله<br></h2>-->
+<!--                    <a  href="{% url 'exames' %}"> <h2 style="color:blue">هنا </h2> </a>-->
+
+
+
+<!--        </div>-->
+<!--      </div>-->
+
+<!--       <div class="card">-->
+<!--         <div class="imgBx">-->
+<!--            <img src="{% static 'images/logo student hub.png' %}" alt="images">-->
+<!--         </div>-->
+<!--         <div class="details">-->
+<!--            <h2>انشئ اختبار<br></h2>-->
+<!--            <a  href="{% url 'exames' %}"> <h2 style="color:blue">هنا </h2> </a>-->
+<!--          </div>-->
+<!--       </div>-->
+
+<!--       <div class="card">-->
+<!--         <div class="imgBx">-->
+<!--            <img src="{% static 'images/logo student hub.png' %}" alt="images">-->
+<!--         </div>-->
+<!--         <div class="details">-->
+<!--            <h2>بث مباشر<br></h2>-->
+<!--            <a  href="{% url 'signin_teacher' %}"> <h2 style="color:blue">هنا </h2> </a>-->
+<!--          </div>-->
+<!--       </div>-->
+
+<!--  </div>-->
+
+
+
+
+
+
+
+
+ {% endblock %}

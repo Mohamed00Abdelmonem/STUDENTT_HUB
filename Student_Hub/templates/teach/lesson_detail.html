@@ -1,0 +1,82 @@
+{% extends 'student/base_nav.html' %}
+{% load static %}
+{% block content %}
+
+<br> <br>
+<div class="container">
+
+
+
+
+<center>
+
+
+
+
+    {% if user.is_authenticated and user%}
+<!--      <p>You are an administrator.</p>-->
+
+
+
+
+<h1 align="center"> Welcome {{user.username}}</h1>
+    <br>
+    <br>
+
+
+
+<!--    <video width="900" height="400" controls >-->
+<!--    <source src="{{ lesson.video.url }}">-->
+<!--    </video>-->
+
+
+<!--    <video id="myVideo"  width="900" height="400"  controls>-->
+<!--    <source id="videoSource" type="video/mp4" src="{{ lesson.video.url }}">-->
+<!--    Your browser does not support the video tag.-->
+<!--    </video>-->
+<p> * السلام عليكم * </p>
+<p>  من فضلك عند وجود اي عطل في تشغيل الفيديو او التحكم في الفيديو  </p>
+<p>,  عليك التوجه الي متصفح اخر    </p>
+<p>  Firefox is good  </p>
+
+
+    <div class="embed-responsive embed-responsive-16by9">
+  <video class="embed-responsive-item" controls controlslist="nodownload">
+    <source src="{{ lesson.video.url }}" type="video/mp4">
+    <source src="{{ lesson.video.url }}" type="video/ogg">
+    Your browser does not support the video tag.
+      هذا المتصفح لا يدعم الفيديو
+  </video>
+</div>
+
+   <br>
+    <br>
+    <br>
+    <br>
+    <br>
+<div class="card text-white" style="background-color: #34495E">
+  <div class="card-body">
+    <h5 class="card-title">{{ lesson.name_lesson}}</h5>
+    <p class="card-text">{{ lesson.description}}</p>
+  </div>
+</div>
+
+
+
+{% else %}
+<!--    <p>You are not an administrator.</p>-->
+    <h1 align="center"> من فضلك سجل الدخول مره اخري </h1>
+
+
+{% endif %}
+
+
+
+</center>
+
+  </div>
+
+
+
+
+{% endblock  %}
